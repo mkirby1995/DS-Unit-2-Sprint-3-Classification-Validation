@@ -51,14 +51,21 @@ For a great explanation of cross-validation, with examples and pictures, **pleas
 
 ![](https://i.imgur.com/vvYjYxh.png)
 
+> With this method we have one data set which we divide randomly into 10 parts. We use 9 of
+those parts for training and reserve one tenth for testing. We repeat this procedure 10 times
+each time reserving a different tenth for testing. 
+
 ## Why hold out an independent test set?
 
 Owen Zhang, [Winning Data Science Competitions](https://www.slideshare.net/OwenZhang2/tips-for-data-science-competitions)
 
-> - There are many ways to overfit. Beware of "multiple comparison fallacy." There is a cost in "peeking at the answer."
-> - Good validation is _more important_ than good models. Simple training/validation split is _not_ enough. When you looked at your validation result for the Nth time, you are training models on it.
-> - If possible, have "holdout" dataset that you do not touch at all during model build process. This includes feature extraction, etc.
-> - What if holdout result is bad? Be brave and scrap the project.
+> There are many ways to overfit. Beware of "multiple comparison fallacy." There is a cost in "peeking at the answer."
+
+> Good validation is _more important_ than good models. Simple training/validation split is _not_ enough. When you looked at your validation result for the Nth time, you are training models on it.
+
+> If possible, have "holdout" dataset that you do not touch at all during model build process. This includes feature extraction, etc.
+
+> What if holdout result is bad? Be brave and scrap the project.
 
 Hastie, Tibshirani, and Friedman, [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/), Chapter 7: Model Assessment and Selection
 
